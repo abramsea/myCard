@@ -1,11 +1,11 @@
-.card__tech {
+.card__tech
+{
     margin: 0 10px 10px 10px;
     font-size: 16px;
     line-height: 1.2;
-}
 
-@media screen and (max-width: 1024px) {
-    .card__tech {
+    @media screen and (max-width: $desktop)
+    {
         font-size: 14px;
         margin: 0 8px 8px 8px;
     }

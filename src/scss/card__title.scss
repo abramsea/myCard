@@ -1,13 +1,13 @@
-.card__title {
+.card__title
+{
     font-family: 'Formular', Arial, Helvetica, sans-serif;
     font-size: 28px;
     line-height: 1.2;
     margin: 10px;
     font-weight: 300;
-}
 
-@media screen and (max-width: 1024px) {
-    .card__title {
+    @media screen and (max-width: $desktop)
+    {
         font-size: 20px;
         margin: 8px;
     }

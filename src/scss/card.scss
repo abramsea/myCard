@@ -1,5 +1,6 @@
-.card {
-    background: #3a4049;
+.card 
+{
+    background: $dark_grey;
     line-height: 0;
     color: #fff;
     text-decoration: none;
@@ -9,11 +10,14 @@
     position: relative;
     overflow: hidden;
     margin: 0 auto;
-}
 
+    &:hover .card__darken
+    {
+        display: none;
+    }
 
-@media screen and (max-width: 1024px) {
-    .card {
+    @media screen and (max-width: $desktop)
+    {
         max-width: 336px;
     }
 }

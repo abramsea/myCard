@@ -1,51 +1,61 @@
-@font-face {
-    font-family: 'Formular';
-    src: url('../fonts/Formular-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
+@charset "UTF-8";
 
-@font-face {
-    font-family: 'Formular';
-    src: url('../fonts/Formular-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
+@import 'media';
+@import 'fonts';
+@import 'colors';
+@import 'card__darken';
+@import 'card__info_type_commit';
+@import 'card__info';
+@import 'card__intro';
+@import 'card__pic-box';
+@import 'card__pic';
+@import 'card__tech';
+@import 'card__title';
+@import 'card';
+@import 'page-title_size_lg';
+@import 'page-title_size_sm';
+@import 'page-title_type_card';
+@import 'page-title_type_commit';
+@import 'page-title';
 
-@font-face {
-    font-family: 'Formular';
-    src: url('../fonts/Formular-Light.woff') format('woff');
-    font-weight: 200;
-    font-style: normal;
-}
 
 * {
     margin: 0;
     padding: 0;
 }
 
-body {
-    color: #fff;
-    font-family: 'Formular', Arial, Helvetica, sans-serif;
-    background: #25292f;
+html
+{
+    scroll-behavior: smooth;
 }
 
-a {
+body 
+{
+    color: #fff;
+    font-family: $formular;
+    background: $turquoise_dark;
+}
+
+a 
+{
     color: #fff;
     text-decoration: none;
 }
 
-.title {
+.title 
+{
     font-weight: 200;
     margin:0 0 20px 0;
     text-align: center;
 }
 
-.position {
+.position 
+{
     margin: 0 0 10px 0;
 }
 
-.icon-down {
+.icon-down 
+{
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -55,29 +65,48 @@ a {
     color: #fff;
 }
 
-.turquoise {
-    color: #69b9a9;
+.turquoise 
+{
+    color: $turquoise;
     font-weight: 500;
 }
 
-.turquoise-dark {
-    color: #25292f;
+.turquoise-dark 
+{
+    color: $turquoise_dark;
 }
 
-.grey {
-    color: #5f5f5f;
-    font-weight: 200;
+.grey 
+{
+    color: $grey;
+    font-weight: $thin;
 }
 
-.frog {
+.frog 
+{
     position: absolute;
     right: 100px;
     bottom: 100px;
     width: 100px;
     z-index: -1;
+
+    @media screen and (max-width: $desktop_m) 
+	{
+        right: 70px;
+        bottom: 70px;
+        width: 70px;
+    }
+    
+    @media screen and (max-width: $tablet) 
+	{
+        right: 52px;
+        bottom: 52px;
+        width: 52px;
+	}
 }
 
-.intro {
+.intro 
+{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -85,14 +114,22 @@ a {
     transform: translate(-50%, -50%)
 }
 
-/* .wrapper {
+/* .wrapper 
+{
     max-width: 1280px;
     width: 70%;
     padding: 100px 0 0 0;
     margin: 0 auto;
+
+	@media screen and (max-width: $tablet) 
+	{
+		width: 95%;
+	}
 } */
 
-.avatar-container {
+
+.avatar-container 
+{
     overflow: hidden;
     max-width: 200px;
     height: auto;
@@ -100,33 +137,39 @@ a {
     border-radius: 50%;
 }
 
-.avatar {
+.avatar 
+{
     max-width: 200px;
     height: auto;
     border-radius: 50%;
     transition: all .2s;
 }
 
-.container {
+.container 
+{
     max-width: 1280px;
     margin: 0 auto;
 }
 
-.container:not(:last-of-type) {
-    border-bottom: 1px solid #69b9a9;
+.container:not(:last-of-type) 
+{
+    border-bottom: 1px solid $turquoise;
     padding: 100px 0;
 }
 
-.container:last-of-type {
+.container:last-of-type 
+{
     padding: 100px 0 0 0;
 }
 
-.about-container {
+.about-container 
+{
     text-align: justify;
     margin: 100vh auto 0 auto;
 }
 
-.about {
+.about 
+{
     margin: 0 auto;
 }
 
@@ -135,65 +178,77 @@ a {
     margin-top: 16px;
 }
 
-p {
+p 
+{
     max-width: 640px;
 }
 
-.growup-wrapper {
+.growup-wrapper 
+{
     max-width: 80%;
     margin: 0 auto;
 }
 
-.growup-row {
+.growup-row 
+{
     display: flex;
 }
 
-.growup-left-col {
+.growup-left-col 
+{
     max-width: 160px;
     width: 100%;
     padding: 0 0 0 100px;
     text-align: right;
 }
 
-.growup-right-col {
+.growup-right-col 
+{
     max-width: 660px;
     width: 100%;
     margin: 0 20px;
 }
 
-.growup-right-col-wrapper {
+.growup-right-col-wrapper 
+{
     position: relative;
 }
 
-.growup-text-wrapper {
+.growup-text-wrapper 
+{
     padding: 0 0 90px 40px;
 }
 
-.timeline-wrapper {
+.timeline-wrapper 
+{
     width: 16px;
     position: relative;
     display: table-cell;
 }
 
-.growup-title {
+.growup-title 
+{
     margin: 0 0 1em 0;
 }
 
-.timeline-circle-wrapper {
+.timeline-circle-wrapper 
+{
     position: absolute;
 }
 
-.timeline-circle {
+.timeline-circle 
+{
     position: absolute;
     top: 4px;
     width: 12px;
     height: 12px;
-    border: 2px solid #fff;
+    border: 2px solid $white;
     border-radius: 50%;
 }
 
-.timeline-line {
-    background: #fff;
+.timeline-line 
+{
+    background: $white;
     width: 2px;
     position: absolute;
     left: 7px;
@@ -202,7 +257,8 @@ p {
     bottom: 4px;
 }
 
-.cards {
+.cards 
+{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-self: center;
@@ -210,45 +266,45 @@ p {
     margin: 64px auto;
     max-width: 1232px;
     padding: 0 40px;
-}  
 
-@media screen and (max-width: 1024px) {
-    .cards {
+    @media screen and (max-width: $desktop) 
+    {
         margin: 32px auto;
         grid-gap: 8px;
     }
-}
 
-@media screen and (max-width: 767px) {
-    .cards {
+    @media screen and (max-width: $tablet) 
+    {
         grid-template-columns: 1fr 1fr;
-    }   
-}
+    }
 
-@media screen and (max-width: 480px) {
-    .cards {
+    @media screen and (max-width: $mobile) 
+    {
         grid-template-columns: 1fr;
-        margin: 32px auto 12px auto;
-    }   
-}
+        margin: 32px auto 12px auto; 
+    }
+}  
 
-
-.contacts-container {
+.contacts-container 
+{
     margin: 30px auto;
     text-align: center;
 }
 
-.icon {
+.icon 
+{
     font-size: 35px;
     transition: all 0.3s;
     margin: 5px 10px;
+
+    &:hover
+    {
+        color: $medium_grey;
+    }
 }
 
-.icon:hover {
-    color: #505050;
-}
-
-.phone {
+.phone 
+{
     font-size: 20px;
 }
 
@@ -262,26 +318,3 @@ p {
         bottom: 20px;
     }
 }
-
-@media screen and (max-width: 1280px) {
-    .frog {
-        right: 70px;
-        bottom: 70px;
-        width: 70px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .frog {
-        right: 52px;
-        bottom: 52px;
-        width: 52px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .wrapper {
-        width: 95%;
-    }
-}
-
