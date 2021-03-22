@@ -1,0 +1,19 @@
+.card {
+    background: #3a4049;
+    line-height: 0;
+    color: #fff;
+    text-decoration: none;
+    max-width: 400px;
+    border-radius: 10px;
+    font-family: 'Formular', Arial, Helvetica, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .card {
+        max-width: 336px;
+    }
+}

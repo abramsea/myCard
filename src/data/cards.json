@@ -1,0 +1,18 @@
+{ 
+    "cards" : [{
+        "title" : "акустика Jamo",
+        "lead" : "Landing page",
+        "tech" : "HTML, CSS, JS",
+        "link" : "https://abramsea.github.io/jamo",
+        "image_src" : "img/jamo.jpg",
+        "github": "https://github.com/abramsea/jamo"
+    },
+    {
+        "title" : "акустика Jamo",
+        "lead" : "Landing page",
+        "tech" : "HTML, CSS, JS",
+        "link" : "https://abramsea.github.io/jamo",
+        "image_src" : "img/jamo.jpg",
+        "github": "https://github.com/abramsea/jamo"
+    }
+]}
