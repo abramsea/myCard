@@ -45,4 +45,31 @@ const card = (
 
 const cardList = document.querySelector( 'ul.cards' );
 
-ReactDOM.render( card, cardList );
+// ReactDOM.render( card, cardList );
+const timelineRow = (
+	<li className="growup-row">
+		<div className="growup-left-col">
+			<p>
+				{date}
+			</p>
+		</div>
+		<div className="growup-right-col">
+			<div className="growup-right-col-wrapper">
+				<div className="timeline-line"></div>
+				<div className="timeline-wrapper">
+					<div className="timeline-circle-wrapper">
+						<div className="timeline-circle"></div>
+					</div>
+				</div>
+				<div className="growup-text-wrapper">
+					<h3 className="growup-title">
+						{title}
+					</h3>
+					<p>
+						{description}
+					</p>
+				</div>
+			</div>
+		</div>
+	</li>
+);
