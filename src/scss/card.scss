@@ -13,7 +13,7 @@
 
     &:hover .card__darken
     {
-        display: none;
+        opacity: 0;
     }
 
     @media screen and (max-width: $desktop)

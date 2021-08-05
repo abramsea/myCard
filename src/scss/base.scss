@@ -59,7 +59,11 @@ a
     position: absolute;
     bottom: 20px;
     left: 50%;
+
+    box-sizing: border-box;
+    padding: 20px;
     margin-right: -50%;
+
     animation: air 3s ease-in-out infinite;
     text-decoration: none;
     color: #fff;
