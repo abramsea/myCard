@@ -5,6 +5,8 @@ const cssmin = require( 'gulp-cssmin' );
 const rename = require( 'gulp-rename' );
 const ghPages = require( 'gulp-gh-pages' );
 const concat = require( 'gulp-concat' );
+const webpack = require( 'webpack' );
+const devServer = require( 'webpack-dev-server' );
 
 const path = {
     build: {
@@ -21,7 +23,7 @@ const path = {
         fonts: 'src/fonts/*.woff',
         images: 'src/images/**'
     }
-}
+};
 
 
 gulp.task( 'sass', function() {
@@ -38,27 +40,27 @@ gulp.task( 'sass', function() {
 gulp.task( 'html:build', function() {
     return gulp.src(path.src.html)
         .pipe(gulp.dest(path.build.html));
-})
+});
 
 gulp.task( 'js:build', function() {
     return gulp.src(path.src.js)
         .pipe(concat('app.js'))
         .pipe(gulp.dest(path.build.js));
-})
+});
 
 gulp.task( 'fonts', function() {
     return gulp.src(path.src.fonts)
         .pipe(gulp.dest(path.build.fonts));
-})
+});
 
 gulp.task( 'images', function() {
     return gulp.src(path.src.images)
         .pipe(gulp.dest(path.build.images))
-})
+});
 
-gulp.task( 'build', gulp.series ('html:build', 'sass', 'js:build', 'fonts', 'images'))
+gulp.task( 'build', gulp.series ('html:build', 'sass', 'js:build', 'fonts', 'images'));
 
 gulp.task( 'deploy', function() {
     return gulp.src('./dist/**/*')
         .pipe(ghPages());
-})
+});

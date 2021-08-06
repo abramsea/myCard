@@ -32,20 +32,24 @@ html
 body 
 {
     color: #fff;
+
     font-family: $formular;
+
     background: $turquoise_dark;
 }
 
 a 
 {
     color: #fff;
+
     text-decoration: none;
 }
 
 .title 
 {
+    margin: 0 0 20px 0;
+    
     font-weight: 200;
-    margin:0 0 20px 0;
     text-align: center;
 }
 
@@ -64,14 +68,17 @@ a
     padding: 20px;
     margin-right: -50%;
 
-    animation: air 3s ease-in-out infinite;
     text-decoration: none;
+
     color: #fff;
+
+    animation: air 3s ease-in-out infinite;
 }
 
 .turquoise 
 {
     color: $turquoise;
+
     font-weight: 500;
 }
 
@@ -83,6 +90,7 @@ a
 .grey 
 {
     color: $grey;
+
     font-weight: $thin;
 }
 
@@ -91,13 +99,15 @@ a
     position: absolute;
     right: 100px;
     bottom: 100px;
-    width: 100px;
     z-index: -1;
+
+    width: 100px;
 
     @media screen and (max-width: $desktop_m) 
 	{
         right: 70px;
         bottom: 70px;
+
         width: 70px;
     }
     
@@ -105,6 +115,7 @@ a
 	{
         right: 52px;
         bottom: 52px;
+
         width: 52px;
 	}
 }
@@ -114,30 +125,20 @@ a
     position: absolute;
     top: 50%;
     left: 50%;
+
     margin-right: -50%;
+
     transform: translate(-50%, -50%)
 }
-
-/* .wrapper 
-{
-    max-width: 1280px;
-    width: 70%;
-    padding: 100px 0 0 0;
-    margin: 0 auto;
-
-	@media screen and (max-width: $tablet) 
-	{
-		width: 95%;
-	}
-} */
-
 
 .avatar-container 
 {
     overflow: hidden;
+
     max-width: 200px;
     height: auto;
     margin: 0 auto;
+
     border-radius: 50%;
 }
 
@@ -145,8 +146,8 @@ a
 {
     max-width: 200px;
     height: auto;
+
     border-radius: 50%;
-    transition: all .2s;
 }
 
 .container 
@@ -157,8 +158,9 @@ a
 
 .container:not(:last-of-type) 
 {
-    border-bottom: 1px solid $turquoise;
     padding: 100px 0;
+
+    border-bottom: 1px solid $turquoise;
 }
 
 .container:last-of-type 
@@ -168,8 +170,9 @@ a
 
 .about-container 
 {
-    text-align: justify;
     margin: 100vh auto 0 auto;
+
+    text-align: justify;
 }
 
 .about 
@@ -190,12 +193,25 @@ p
 .growup-wrapper 
 {
     max-width: 80%;
-    margin: 0 auto;
+    margin: 64px auto;
 }
 
 .growup-row 
 {
     display: flex;
+
+    &:last-child
+    {
+        .timeline-line
+        {
+            display: none;
+        }
+
+        .growup-text-wrapper 
+        {
+            padding-bottom: 40px;
+        }
+    }
 }
 
 .growup-left-col 
@@ -203,6 +219,7 @@ p
     max-width: 160px;
     width: 100%;
     padding: 0 0 0 100px;
+
     text-align: right;
 }
 
@@ -225,9 +242,11 @@ p
 
 .timeline-wrapper 
 {
-    width: 16px;
     position: relative;
+
     display: table-cell;
+
+    width: 16px;
 }
 
 .growup-title 
@@ -244,21 +263,25 @@ p
 {
     position: absolute;
     top: 4px;
+
     width: 12px;
     height: 12px;
+
     border: 2px solid $white;
     border-radius: 50%;
 }
 
 .timeline-line 
 {
-    background: $white;
-    width: 2px;
     position: absolute;
     left: 7px;
     top: 28px;
     right: 0;
     bottom: 4px;
+
+    width: 2px;
+
+    background: $white;
 }
 
 .cards 
@@ -267,14 +290,18 @@ p
     grid-template-columns: repeat(3, 1fr);
     justify-self: center;
     grid-gap: 16px;
-    margin: 64px auto;
+
     max-width: 1232px;
+    margin: 64px auto;
     padding: 0 40px;
+
+    list-style: none;
 
     @media screen and (max-width: $desktop) 
     {
-        margin: 32px auto;
         grid-gap: 8px;
+
+        margin: 32px auto;
     }
 
     @media screen and (max-width: $tablet) 
@@ -285,6 +312,7 @@ p
     @media screen and (max-width: $mobile) 
     {
         grid-template-columns: 1fr;
+
         margin: 32px auto 12px auto; 
     }
 }  
@@ -292,14 +320,17 @@ p
 .contacts-container 
 {
     margin: 30px auto;
+
     text-align: center;
 }
 
 .icon 
 {
-    font-size: 35px;
-    transition: all 0.3s;
     margin: 5px 10px;
+
+    font-size: 20px;
+
+    transition: color 0.3s;
 
     &:hover
     {

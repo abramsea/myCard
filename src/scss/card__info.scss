@@ -1,8 +1,9 @@
 .card__info
 {
-    padding: 20px 24px 54px 24px;
     display: flex;
     justify-content: space-evenly;
+    
+    padding: 20px 24px 54px 24px;
 
     @media screen and (max-width: $desktop)
     {
