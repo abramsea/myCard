@@ -53,6 +53,8 @@ const projectsInfo = JSON.parse( projectsJSON );
 
 const cardList = Object.keys(projectsInfo).map(key => <div key={key}>{projectsInfo[key]}</div>);
 
+console.log(cardList)
+
 // (<li className="card" key={item}>
 // 		<a className="card__pic-box" href={link} target="_blank">
 //             <img className="card__pic" src={image} alt={title}></img>
@@ -78,7 +80,7 @@ const cardList = Object.keys(projectsInfo).map(key => <div key={key}>{projectsIn
 
 const projects = document.querySelector( '#projects' );
 
-ReactDOM.render( <ul className="cards">{cardList}</ul>, projects );
+// ReactDOM.render( <ul className="cards">{cardList}</ul>, projects );
 const timelineJSON = `{
 	"1": {
 		"date": "2019.01",
