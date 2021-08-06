@@ -51,7 +51,7 @@ const projectsJSON = `{
 
 const projectsInfo = JSON.parse( projectsJSON );
 
-const cardList = Object.keys(projectsInfo).map(key => <div key={key}>{projectsInfo[key]}</div>);
+const cardList = Object.values( projectsInfo ).map( item => item );
 
 console.log(cardList)
 
