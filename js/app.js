@@ -28,7 +28,7 @@ const projectsJSON = `{
 		"link": "http://residencesathrhdavos.com/virtual-tours/",
 		"github": null,
 		"image": "images/hrh.png",
-		"lead":  "Компонент "Виртуальные туры" и др.",
+		"lead":  "Компонент «Виртуальные туры» и др.",
 		"tech": "HTML, CSS, JS"
 	},
 	"diploma": {
