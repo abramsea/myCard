@@ -1,0 +1,66 @@
+.growup-wrapper 
+{
+    max-width: 80%;
+    margin: 64px auto;
+}
+
+.growup-row 
+{
+    display: flex;
+
+    &:last-child
+    {
+        .timeline-line
+        {
+            display: none;
+        }
+
+        .growup-text-wrapper 
+        {
+            padding-bottom: 40px;
+        }
+    }
+}
+
+.growup-left-col 
+{
+    max-width: 160px;
+    width: 100%;
+    padding: 0 0 0 100px;
+
+    text-align: right;
+    
+    p
+    {
+        font-size: 16px;
+    }
+}
+
+.growup-right-col 
+{
+    max-width: 660px;
+    width: 100%;
+    margin: 0 20px;
+}
+
+.growup-right-col-wrapper 
+{
+    position: relative;
+}
+
+.growup-text-wrapper 
+{
+    padding: 0 0 90px 40px;
+
+    p
+    {
+        font-size: 16px;
+    }
+}
+
+.growup-title 
+{
+    margin: 0 0 1em 0;
+
+    font-size: 20px;
+}

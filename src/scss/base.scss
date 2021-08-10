@@ -3,20 +3,19 @@
 @import 'media';
 @import 'fonts';
 @import 'colors';
-@import 'card__darken';
-@import 'card__info_type_commit';
-@import 'card__info';
-@import 'card__intro';
-@import 'card__pic-box';
-@import 'card__pic';
-@import 'card__tech';
-@import 'card__title';
+@import 'avatar';
+@import 'cards';
 @import 'card';
-@import 'page-title_size_lg';
-@import 'page-title_size_sm';
-@import 'page-title_type_card';
-@import 'page-title_type_commit';
+@import 'frog';
+@import 'lead';
+@import 'growup';
+@import 'icon-down';
+@import 'intro';
 @import 'page-title';
+@import 'position';
+@import 'section';
+@import 'timeline';
+@import 'title';
 
 
 * {
@@ -31,7 +30,7 @@ html
 
 body 
 {
-    color: #fff;
+    color: $white;
 
     font-family: $formular;
 
@@ -40,39 +39,14 @@ body
 
 a 
 {
-    color: #fff;
+    color: $white;
 
     text-decoration: none;
 }
 
-.title 
+p 
 {
-    margin: 0 0 20px 0;
-    
-    font-weight: 200;
-    text-align: center;
-}
-
-.position 
-{
-    margin: 0 0 10px 0;
-}
-
-.icon-down 
-{
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-
-    box-sizing: border-box;
-    padding: 20px;
-    margin-right: -50%;
-
-    text-decoration: none;
-
-    color: #fff;
-
-    animation: air 3s ease-in-out infinite;
+    max-width: 640px;
 }
 
 .turquoise 
@@ -92,236 +66,6 @@ a
     color: $grey;
 
     font-weight: $thin;
-}
-
-.frog 
-{
-    position: absolute;
-    right: 100px;
-    bottom: 100px;
-    z-index: -1;
-
-    width: 100px;
-
-    @media screen and (max-width: $desktop_m) 
-	{
-        right: 70px;
-        bottom: 70px;
-
-        width: 70px;
-    }
-    
-    @media screen and (max-width: $tablet) 
-	{
-        right: 52px;
-        bottom: 52px;
-
-        width: 52px;
-	}
-}
-
-.intro 
-{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    margin-right: -50%;
-
-    transform: translate(-50%, -50%)
-}
-
-.avatar-container 
-{
-    overflow: hidden;
-
-    max-width: 200px;
-    height: auto;
-    margin: 0 auto;
-
-    border-radius: 50%;
-}
-
-.avatar 
-{
-    max-width: 200px;
-    height: auto;
-
-    border-radius: 50%;
-}
-
-.container 
-{
-    max-width: 1280px;
-    margin: 0 auto;
-}
-
-.container:not(:last-of-type) 
-{
-    padding: 100px 0;
-
-    border-bottom: 1px solid $turquoise;
-}
-
-.container:last-of-type 
-{
-    padding: 100px 0 0 0;
-}
-
-.about-container 
-{
-    margin: 100vh auto 0 auto;
-
-    text-align: justify;
-}
-
-.about 
-{
-    margin: 0 auto;
-}
-
-.about + .about
-{
-    margin-top: 16px;
-}
-
-p 
-{
-    max-width: 640px;
-}
-
-.growup-wrapper 
-{
-    max-width: 80%;
-    margin: 64px auto;
-}
-
-.growup-row 
-{
-    display: flex;
-
-    &:last-child
-    {
-        .timeline-line
-        {
-            display: none;
-        }
-
-        .growup-text-wrapper 
-        {
-            padding-bottom: 40px;
-        }
-    }
-}
-
-.growup-left-col 
-{
-    max-width: 160px;
-    width: 100%;
-    padding: 0 0 0 100px;
-
-    text-align: right;
-}
-
-.growup-right-col 
-{
-    max-width: 660px;
-    width: 100%;
-    margin: 0 20px;
-}
-
-.growup-right-col-wrapper 
-{
-    position: relative;
-}
-
-.growup-text-wrapper 
-{
-    padding: 0 0 90px 40px;
-}
-
-.timeline-wrapper 
-{
-    position: relative;
-
-    display: table-cell;
-
-    width: 16px;
-}
-
-.growup-title 
-{
-    margin: 0 0 1em 0;
-}
-
-.timeline-circle-wrapper 
-{
-    position: absolute;
-}
-
-.timeline-circle 
-{
-    position: absolute;
-    top: 4px;
-
-    width: 12px;
-    height: 12px;
-
-    border: 2px solid $white;
-    border-radius: 50%;
-}
-
-.timeline-line 
-{
-    position: absolute;
-    left: 7px;
-    top: 28px;
-    right: 0;
-    bottom: 4px;
-
-    width: 2px;
-
-    background: $white;
-}
-
-.cards 
-{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-self: center;
-    grid-gap: 16px;
-
-    max-width: 1232px;
-    margin: 64px auto;
-    padding: 0 40px;
-
-    list-style: none;
-
-    @media screen and (max-width: $desktop) 
-    {
-        grid-gap: 8px;
-
-        margin: 32px auto;
-    }
-
-    @media screen and (max-width: $tablet) 
-    {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    @media screen and (max-width: $mobile) 
-    {
-        grid-template-columns: 1fr;
-
-        margin: 32px auto 12px auto; 
-    }
-}  
-
-.contacts-container 
-{
-    margin: 30px auto;
-
-    text-align: center;
 }
 
 .icon 

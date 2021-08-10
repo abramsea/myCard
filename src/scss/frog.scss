@@ -1,0 +1,25 @@
+.frog 
+{
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+    z-index: -1;
+
+    width: 100px;
+
+    @media screen and (max-width: $desktop_m) 
+	{
+        right: 70px;
+        bottom: 70px;
+
+        width: 70px;
+    }
+    
+    @media screen and (max-width: $tablet) 
+	{
+        right: 52px;
+        bottom: 52px;
+
+        width: 52px;
+	}
+}

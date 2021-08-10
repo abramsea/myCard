@@ -1,0 +1,38 @@
+.timeline-wrapper 
+{
+    position: relative;
+
+    display: table-cell;
+
+    width: 16px;
+}
+
+.timeline-circle-wrapper 
+{
+    position: absolute;
+}
+
+.timeline-circle 
+{
+    position: absolute;
+    top: 4px;
+
+    width: 12px;
+    height: 12px;
+
+    border: 2px solid $white;
+    border-radius: 50%;
+}
+
+.timeline-line 
+{
+    position: absolute;
+    left: 7px;
+    top: 28px;
+    right: 0;
+    bottom: 4px;
+
+    width: 2px;
+
+    background: $white;
+}

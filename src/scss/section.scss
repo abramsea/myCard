@@ -1,0 +1,36 @@
+section 
+{
+    max-width: 1280px;
+    margin: 0 auto;
+
+	&:not(:last-of-type)
+	{
+		padding: 100px 0;
+
+		border-bottom: 1px solid $turquoise;
+	}
+
+	&:first-of-type
+	{
+		border-bottom: none;
+	}
+
+	&:last-of-type
+	{
+		padding: 100px 0 0 0;
+	}
+
+	&.about
+	{
+		margin: 100vh auto 0 auto;
+
+		text-align: justify;
+	}
+
+	&.contacts
+	{
+		margin: 30px auto;
+
+		text-align: center;
+	}
+}
