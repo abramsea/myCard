@@ -1,0 +1,50 @@
+{
+	"pk1": {
+		"title": "Петровская коса, 1",
+		"link": "https://pk1.spb.ru",
+		"github": null,
+		"image": "images/pk1.png",
+		"lead": "Различные компоненты сайта строительной компании",
+		"tech": "HTML, CSS, JS"
+	},
+	"investtorg": {
+		"title": "Инвестторг",
+		"link": "https://investtorg.ru/",
+		"github": null,
+		"image": "images/investtorg.png",
+		"lead": "Различные компоненты сайта строительной компании",
+		"tech": "HTML, CSS, JS"
+	},
+	"plg": {
+		"title": "PLG",
+		"link": "https://plg.group",
+		"github": null,
+		"image": "images/plg.png",
+		"lead": "Различные компоненты сайта строительной компании",
+		"tech": "HTML, CSS, JS"
+	},
+	"hrh": {
+		"title": "Hard Rock Hotel Davos",
+		"link": "http://residencesathrhdavos.com/virtual-tours/",
+		"github": null,
+		"image": "images/hrh.png",
+		"lead":  "Компонент «Виртуальные туры» и др.",
+		"tech": "HTML, CSS, JS"
+	},
+	"diploma": {
+		"title": "Анализатор новостей",
+		"link": "https://abramsea.github.io/diploma/index.html",
+		"github": "https://github.com/abramsea/diploma",
+		"image": "images/analyzer.jpg",
+		"lead":  "Дипломный проект Яндекс.Практикум.",
+		"tech": "HTML, CSS, JS, Webpack"
+	},
+	"mesto": {
+		"title": "Mesto",
+		"link": "https://abramsea.github.io/spr11/index.htm",
+		"github": "https://github.com/abramsea/spr11",
+		"image": "images/mesto.jpg",
+		"lead":  "Проект Яндекс.Практикум.",
+		"tech": "HTML, CSS, JS, Webpack"
+	}
+}
