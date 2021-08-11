@@ -14,17 +14,18 @@ const path = {
         js: 'dist/js',
         css: 'dist/css',
         fonts: 'dist/fonts',
-        images: 'dist/images'
+        images: 'dist/images',
+        data: 'dist/data'
     },
     src: {
         html: 'src/index.html',
         scss: 'src/scss/base.scss',
         js: 'src/js/*.js',
         fonts: 'src/fonts/*.woff',
-        images: 'src/images/**'
+        images: 'src/images/**',
+        data: 'src/data/**'
     }
 };
-
 
 gulp.task( 'sass', function() {
     return gulp.src(path.src.scss)
@@ -58,7 +59,12 @@ gulp.task( 'images', function() {
         .pipe(gulp.dest(path.build.images))
 });
 
-gulp.task( 'build', gulp.series ('html:build', 'sass', 'js:build', 'fonts', 'images'));
+gulp.task( 'data', function() {
+    return gulp.src(path.src.data)
+        .pipe(gulp.dest(path.build.data))
+});
+
+gulp.task( 'build', gulp.series ('html:build', 'sass', 'js:build', 'fonts', 'images', 'data'));
 
 gulp.task( 'deploy', function() {
     return gulp.src('./dist/**/*')
