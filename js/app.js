@@ -1,8 +1,8 @@
-fetch('../data/cardList.json')
+fetch('data/cardList.json')
   .then(( res ) => res.json())
   .then(( data ) => {
    
-	const projectsInfo = JSON.parse( data );
+	const projectsInfo = data;
 	const cards = Object.values( projectsInfo ).map( item => item );
 
 	function CardList( props ) {
@@ -48,11 +48,11 @@ fetch('../data/cardList.json')
 
 
 
-fetch('../data/timeline.json')
+fetch('data/timeline.json')
   .then(( res ) => res.json())
   .then(( data ) => {
-    
-	const timelineInfo = JSON.parse( data );
+
+	const timelineInfo = data;
 	const timelineRows = Object.values( timelineInfo ).map( item => item );
 
 	function TimelineList( props ) {
